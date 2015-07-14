@@ -1,6 +1,6 @@
 ## Sensu-Plugins-gluster
 
-[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-gluster.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-gluster)
+[ ![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-gluster.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-gluster)
 [![Gem Version](https://badge.fury.io/rb/sensu-plugins-gluster.svg)](http://badge.fury.io/rb/sensu-plugins-gluster)
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-gluster/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-gluster)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-gluster/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-gluster)
