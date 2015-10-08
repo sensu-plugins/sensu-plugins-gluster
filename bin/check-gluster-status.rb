@@ -46,13 +46,11 @@ class GlusterReplStatus < Sensu::Plugin::Check::CLI
   def run
     errors = []
     # #YELLOW
-    `sudo gluster volume status`.each_line do |l| # rubocop:disable Style/Next
+    `sudo gluster volume status`.each_line do |l|
       # Don't match those lines or conditions.
-      if l =~ / N /
-        unless (config[:ignore_nfs]      && 'NFS'.include?(l.split[0])) \
-            || (config[:ignore_selfheal] && 'Self-heal'.include?(l.split[0]))
-          errors << "#{l.split[0]} #{l.split[1]} is DOWN"
-        end
+      next unless l =~ / N /
+      unless (config[:ignore_nfs] && 'NFS'.include?(l.split[0])) || (config[:ignore_selfheal] && 'Self-heal'.include?(l.split[0]))
+        errors << "#{l.split[0]} #{l.split[1]} is DOWN"
       end
     end
 
