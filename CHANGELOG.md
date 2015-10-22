@@ -5,7 +5,7 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## Unreleased
 
-## [0.0.3] - 2015-10-08
+## [0.0.3] - 2015-10-15
 ### Changed
 - Added check-gluster-status.rb
 

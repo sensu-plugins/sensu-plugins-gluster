@@ -39,13 +39,12 @@ class GlusterReplStatus < Sensu::Plugin::Check::CLI
   option :ignore_selfheal,
          short: '-s',
          long: '--ignore-selfheal',
-         description: 'Ignore selfheal service',
+         description: 'Ignore self-heal service',
          boolean: true,
          default: false
 
   def run
     errors = []
-    # #YELLOW
     `sudo gluster volume status`.each_line do |l|
       # Don't match those lines or conditions.
       next unless l =~ / N /
