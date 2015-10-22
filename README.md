@@ -11,6 +11,7 @@
 
 ## Files
  * bin/check-gluster-georepl-status.rb
+ * bin/check-gluster-status.rb
 
 ## Usage
 
