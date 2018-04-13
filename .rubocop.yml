@@ -31,3 +31,8 @@ Style/Documentation:
 
 Style/Next:
   Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'test/**/*.rb'
+    - 'sensu-plugins-gluster.gemspec'
