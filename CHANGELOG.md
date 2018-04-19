@@ -1,9 +1,11 @@
 #Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
+This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins/community/blob/master/HOW_WE_CHANGELOG.md)
 
 ## [Unreleased]
+
+## [2.0.0] - 2018-04-18
 ### Breaking Changes
 - dropped ruby 2.0 support (@yuri-zubov sponsored by Actility, https://www.actility.com)
 - added `nokogiri` as a dependency which requires you to have a local c compiler present to install this plugin (@yuri-zubov sponsored by Actility, https://www.actility.com)
@@ -15,6 +17,9 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ### Added
 - Added ability to get metrics from gluster (@yuri-zubov sponsored by Actility, https://www.actility.com)
+
+### Changed
+- updated changelog guidelines location (@majormoses)
 
 ## [1.0.0] - 2017-07-15
 ### Added
@@ -37,7 +42,8 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-gluster/compare/1.0.0...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-gluster/compare/2.0.0...HEAD
+[2.0.0]: https://github.com/sensu-plugins/sensu-plugins-gluster/compare/1.0.0...2.0.0
 [1.0.0]: https://github.com/sensu-plugins/sensu-plugins-gluster/compare/0.0.3...1.0.0
 [0.0.3]: https://github.com/sensu-plugins/sensu-plugins-gluster/compare/0.0.2...0.0.3
 [0.0.2]: https://github.com/sensu-plugins/sensu-plugins-gluster/compare/0.0.1...0.0.2
